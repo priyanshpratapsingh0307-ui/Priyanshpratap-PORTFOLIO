@@ -1,10 +1,10 @@
 import { Reveal } from "./Reveal";
 
 const quotes = [
-  { q: "Priyansh has a rare obsession with detail. Every screen feels considered, every interaction earns its place.", a: "Anaya Sharma", r: "Co-founder, Halcyon" },
-  { q: "The single best collaborator we've worked with. Calm, fast, and quietly brilliant.", a: "Marcus Lee", r: "Creative Director, Aether" },
-  { q: "He doesn't ship features — he ships finished products. Our team learned a lot from him.", a: "Sara Okafor", r: "Head of Product, Nimbus" },
-  { q: "Cinematic motion design and elegant systems. A real craftsman.", a: "Tomás Vidal", r: "Founder, Orbit AI" },
+  { q: "Priyansh has a rare obsession with detail. Every screen feels considered, every interaction earns its place.", a: "colleagues", r: "College and school" },
+  { q: "Co-operative and hunger of learning", a: "Professors", r: "College" },
+  // { q: "He doesn't ship features — he ships finished products. Our team learned a lot from him.", a: "Sara Okafor", r: "Head of Product, Nimbus" },
+  // { q: "Cinematic motion design and elegant systems. A real craftsman.", a: "Tomás Vidal", r: "Founder, Orbit AI" },
 ];
 
 export const Testimonials = () => {
