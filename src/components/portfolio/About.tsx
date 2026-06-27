@@ -3,10 +3,10 @@ import portrait from "@/assets/portrait.jpg";
 import { Reveal } from "./Reveal";
 
 const stats = [
-  { k: "5+", v: "Years Experience" },
-  { k: "40+", v: "Projects Shipped" },
-  { k: "12", v: "Hackathons" },
-  { k: "6", v: "Internships" },
+  { k: "0+", v: "Years Experience" },
+  { k: "3+", v: "Projects Shipped" },
+  { k: "1", v: "Hackathons" },
+  { k: "1", v: "Internships" },
 ];
 
 const experience = [
