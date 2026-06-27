@@ -1,0 +1,153 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Priyansh Pratap — Editorial Luxury Portfolio
+   All colors are HSL design tokens. */
+
+@layer base {
+  :root {
+    /* Base canvas */
+    --background: 60 11% 96%;            /* #F6F6F4 */
+    --foreground: 0 0% 7%;               /* #111111 */
+
+    --card: 0 0% 100%;                   /* #FFFFFF */
+    --card-foreground: 0 0% 7%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 7%;
+
+    --primary: 0 0% 7%;                  /* near-black */
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 0 0% 44%;               /* #6F6F6F secondary text */
+    --secondary-foreground: 0 0% 100%;
+
+    --muted: 60 11% 93%;
+    --muted-foreground: 0 0% 44%;
+
+    --accent: 0 0% 85%;                  /* #D9D9D9 separators */
+    --accent-foreground: 0 0% 7%;
+
+    --destructive: 0 70% 45%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 0 0% 0%;                   /* used with opacity */
+    --input: 0 0% 88%;
+    --ring: 0 0% 7%;
+
+    --radius: 1.5rem;                    /* 24px cards; sections 28px */
+
+    /* Editorial tokens */
+    --hairline: 0 0% 0%;                 /* rgba(0,0,0,0.08) via /8 */
+    --ink-soft: 0 0% 44%;
+    --paper: 60 11% 96%;
+    --ink: 0 0% 7%;
+
+    --shadow-elegant: 0 25px 70px hsl(0 0% 0% / 0.08);
+    --shadow-card: 0 10px 40px hsl(0 0% 0% / 0.06);
+    --shadow-hover: 0 35px 90px hsl(0 0% 0% / 0.14);
+
+    --ease-luxe: cubic-bezier(0.22, 1, 0.36, 1);
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 0 0% 7%;
+    --sidebar-primary: 0 0% 7%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 0 0% 95%;
+    --sidebar-accent-foreground: 0 0% 7%;
+    --sidebar-border: 0 0% 90%;
+    --sidebar-ring: 0 0% 7%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans;
+    font-feature-settings: "ss01", "cv11";
+    letter-spacing: -0.01em;
+    background-image:
+      /* extremely subtle paper grain */
+      radial-gradient(hsl(0 0% 0% / 0.025) 1px, transparent 1px),
+      radial-gradient(hsl(0 0% 0% / 0.018) 1px, transparent 1px);
+    background-size: 3px 3px, 7px 7px;
+    background-position: 0 0, 1px 2px;
+  }
+
+  ::selection {
+    background: hsl(var(--ink));
+    color: hsl(var(--primary-foreground));
+  }
+}
+
+@layer components {
+  .container-luxe {
+    @apply mx-auto w-full max-w-[1400px] px-6 md:px-10 lg:px-16;
+  }
+
+  .display {
+    font-family: "General Sans", "Inter", ui-sans-serif, system-ui, sans-serif;
+    font-weight: 700;
+    letter-spacing: -0.04em;
+    line-height: 0.88;
+  }
+
+  .display-outline {
+    -webkit-text-stroke: 1.5px hsl(var(--ink));
+    color: transparent;
+  }
+
+  .eyebrow {
+    @apply text-[11px] uppercase tracking-[0.22em] text-muted-foreground;
+  }
+
+  .hairline {
+    background: hsl(0 0% 0% / 0.08);
+  }
+
+  .glass {
+    background: hsl(0 0% 100% / 0.7);
+    backdrop-filter: blur(20px) saturate(140%);
+    -webkit-backdrop-filter: blur(20px) saturate(140%);
+    border: 1px solid hsl(0 0% 0% / 0.06);
+  }
+
+  .pill-nav-shadow {
+    box-shadow: 0 10px 40px hsl(0 0% 0% / 0.08), 0 1px 0 hsl(0 0% 100% / 0.6) inset;
+  }
+
+  .card-luxe {
+    background: hsl(var(--card));
+    border-radius: 1.5rem;
+    box-shadow: var(--shadow-card);
+    border: 1px solid hsl(0 0% 0% / 0.05);
+  }
+
+  .section-shell {
+    border-radius: 1.75rem;
+    border: 1px solid hsl(0 0% 0% / 0.06);
+    background: hsl(var(--card));
+    box-shadow: var(--shadow-card);
+  }
+
+  .marquee-mask {
+    -webkit-mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+            mask-image: linear-gradient(to right, transparent, black 8%, black 92%, transparent);
+  }
+}
+
+@layer utilities {
+  .text-balance { text-wrap: balance; }
+  .no-scrollbar::-webkit-scrollbar { display: none; }
+  .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+}
