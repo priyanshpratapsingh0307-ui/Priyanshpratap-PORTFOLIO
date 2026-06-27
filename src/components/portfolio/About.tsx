@@ -33,8 +33,8 @@ const experience = [
   },
   {
     year: "2024 – 2028",
-    title: "B.Tech in Computer Science & Engineering",
-    company: "Your College Name",
+    title: "B.Tech in Information Technology",
+    company: "Dr. B.R. Ambedkar National Institute of Technology,Jalandhar,Punjab",
     description:
       "Pursuing a Bachelor's degree with a focus on software engineering, artificial intelligence, Flutter development, data structures & algorithms, and full-stack development.",
   },
