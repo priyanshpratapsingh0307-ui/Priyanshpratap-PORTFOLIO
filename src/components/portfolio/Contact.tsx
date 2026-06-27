@@ -24,15 +24,15 @@ export const Contact = () => {
             <ul className="mt-10 space-y-4 text-sm">
               <li className="flex items-center justify-between border-b border-border py-3">
                 <span className="text-muted-foreground">Email</span>
-                <a href="mailto:hello@priyansh.studio" className="hover:underline">hello@priyansh.studio</a>
+                <a href="mailto:hello@priyansh.studio" className="hover:underline">priyanshpratapsingh0307@gmail.com</a>
               </li>
               <li className="flex items-center justify-between border-b border-border py-3">
                 <span className="text-muted-foreground">Based in</span>
-                <span>Bengaluru, India</span>
+                <span>Meerut & Jalandhar, India</span>
               </li>
               <li className="flex items-center justify-between border-b border-border py-3">
                 <span className="text-muted-foreground">Booking</span>
-                <span>Q3 2026</span>
+                <span>Open to work</span>
               </li>
             </ul>
           </Reveal>
